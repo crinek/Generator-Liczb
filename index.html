@@ -4,20 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GENERATOR LICZB</title>
+    <link rel="icon" href="./assets/favicon.ico" sizes="any">
+    <style>
+        @keyframes hand {
+            0% {
+            }
+            50% {
+                transform: rotate(25deg) scale(1.2); 
+            }
+            100% {
+            }
+        }
+
+        .hand {
+            display: inline-block;
+            animation: hand 1s ease-in infinite alternate forwards;
+        }
+    </style>
 </head>
 <body>
-    <h1 class="head head--js">WITAJ ŚWIECIE!</h1>
-    <button class="button button--js">KLIKNIJ MNIE!</button>
-    <script>
-        const head = document.querySelector('.head--js');
-        const button = document.querySelector('.button--js');
 
-        function change(){
+    <h1 class="header__title">GENERATOR LICZB<span class="hand">🖐</span></h1>
+    <section>
+        <button class="button button--js">LOSUJ</button>
+        <h2>Wylosowane liczby:</h2>
+        <ul class="list list--js">
 
-        }
-        button.addEventListener('click', change);
+        </ul>
 
-    </script>
+
+    </section>
+    <script src="./main.js"></script>
 </body>
 </html>
